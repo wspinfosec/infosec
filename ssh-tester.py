@@ -2,9 +2,9 @@ import paramiko # biblioteca que finge ser um cliente SSH
 import time
 
 # CONFIGURAÇÃO - SÓ ATACA LOCALHOST
-TARGET = "127.0.0.1"  # 127.0.0.1 = seu próprio PC, nunca mude isso pra IP de outro
-USER = "lab" # usuário fraco que criamos
-WORDLIST = ["123456", "admin", "password", "toor", "toor123"] # senhas vazadas reais
+TARGET = "192.168.56.10"  # 127.0.0.1 = seu próprio PC, nunca mude isso pra IP de outro
+USER = "aluno" # usuário fraco que criamos
+WORDLIST = ["senha123","123456", "admin", "password", "toor", "toor123"] # senhas vazadas reais
 
 print(f"[DIA 2] Testando {USER}@{TARGET} - apenas LAB LOCAL")
 
